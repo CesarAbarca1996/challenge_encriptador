@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <title>Challenge Alura Latam</title>
+</head>
+<body>
+    <header class="header"> 
+        
+    </header>
+    <main class="presentacion"> 
+        <section class="presentacion_contenido"> 
+            <h2>Encriptar o Desencriptar</p><br>
+            <textarea id="palabras_usuario" class="texto_usuario" placeholder="Ingresa un texto aqui, que deseas encriptar o desencriptar" pattern="[A-Za-z0-9]{1,15}"></textarea>
+            <p class="presentacion_advertencia"><i class="material-icons">info_outline</i>Solo letras minúsculas y sin acentos</p>
+            <div class="presentacion_botones"> 
+                <button onclick="encriptar();" class="boton">Encriptar</button>
+                <button id="descencriptador" onclick="desencriptar();" class="boton">Desencriptar</button>  
+            </div> 
+        </section> 
+        <div class="card">
+          <img id="imagen_encriptador" src="assets/foto_ecriptador.png" alt="imagen encriptador">
+            <h2 id="aviso_usuario"></h2> 
+            <p id="instruccion_usuario">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div> 
+    </main>
+    <footer>
+        <p class="presentacion_footer">Desarrollado por Cesar Abarca</p>
+    </footer>
+
+    <script src="funciones.js" defer></script>
+</body>
+</html>
